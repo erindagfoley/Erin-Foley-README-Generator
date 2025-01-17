@@ -29,7 +29,7 @@ const questions = [
    },
    {
     type: "input",
-    name: "credits",
+    name: "contributors",
     message: 'List your collaborators, third-party assets, or tutorials'
    },
    {
@@ -38,14 +38,25 @@ const questions = [
     message: 'Please select a license for this project',
     choices: ['MIT', 'APACHE2.0', 'Boost1.0', 'MPL2.0', 'BSD2', 'BSD3', 'none'],
    },
-
+   {
+    type: "input",
+    name: "testing",
+    message: 'Include tests for your application and provide examples on how to run'
+   },
 ]
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        console.log("Creating README.md File");
+        writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+      });
+}
 
 
 // Function call to initialize app
