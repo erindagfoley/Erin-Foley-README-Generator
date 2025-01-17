@@ -34,9 +34,8 @@ ${renderLicenseBadge(data.license)}
 $ {data.description}
 ## Table of Contents
 * [Description](#description)
-* [Requirements](#requirements)
+* [Installation](#installation)
 * [Usage](#usage)
-* [Contact-Me](#contact-me)
 * [Contributors](#contributors)
 * [Testing](#testing)
 ## Features
