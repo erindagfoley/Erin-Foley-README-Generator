@@ -1,9 +1,9 @@
 // TODO: Include packages needed for this application
-import fs from 'fs';
-import inquirer from 'inquirer';
-import path from 'path';
-const generateMarkdown =  require('./utils/generateMarkdown');
-
+import fs from 'fs'
+import inquirer from 'inquirer'
+import path from 'path'
+const generateMarkdown =  require('./utils/generateMarkdown')
+import markdown from ('./utils/generateMarkdown') //This might do the same as line 5. If so, change it to this because this is the syntax used in class
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -24,7 +24,7 @@ const questions = [
    },
    {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message: 'Provide instructions for use'
    },
    {
