@@ -30,3 +30,4 @@ This project was created by Erin Foley. Contributions from the open-source commu
 If you have any questions about this project, feel free to reach out:
 - GitHub: erindagfoley
 - Email: erindagfoley@gmail.com
+- You may view a tutorial on how to use this README generator at https://tinyurl.com/erin-foley-readme-tutorial 
