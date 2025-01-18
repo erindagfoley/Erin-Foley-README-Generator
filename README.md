@@ -16,17 +16,17 @@ To set up the README File Generator on your local machine, follow these steps:
 
 1. Clone the repository
 2. Navigate to the repository
-3. Install the fs module (File System) and inquirer package dependencies 
+3. Install the inquirer package as a dependency
 
 ## Usage
-Open the cloned repository in Visual Studio Code or your preferred source code editor.
-Open an integrated terminal in the project directory.
-Run the node index.js command.
-Follow the prompts to input your project information.
-After completing the prompts, the generator will create a README.md file in the specified directory.
+- Open the cloned repository in Visual Studio Code or your preferred source code editor.
+- Open an integrated terminal in the project directory.
+- Run the node index.js command.
+- Follow the prompts to input your project information.
+- After completing the prompts, the generator will create a README.md file in the specified directory.
 ## Collaborators
 This project was created by Erin Foley. Contributions from the open-source community are welcome! Feel free to submit pull requests or report issues.
 ## Questions
 If you have any questions about this project, feel free to reach out:
-GitHub: erindagfoley
-Email: erindagfoley@gmail.com
+- GitHub: erindagfoley
+- Email: erindagfoley@gmail.com
