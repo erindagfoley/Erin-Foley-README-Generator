@@ -2,8 +2,7 @@
 import fs from 'fs'
 import inquirer from 'inquirer'
 import path from 'path'
-const generateMarkdown =  require('./utils/generateMarkdown')
-import markdown from ('./utils/generateMarkdown') //This might do the same as line 5. If so, change it to this because this is the syntax used in class
+import generateMarkdown from './utils/generateMarkdown.js'
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -40,8 +39,13 @@ const questions = [
    },
    {
     type: "input",
-    name: "testing",
+    name: "test",
     message: 'Include tests for your application and provide examples on how to run'
+   },
+   {
+    type: "input",
+    name: "questions",
+    message: 'Include any questions for your application'
    },
 ]
 // TODO: Create a function to write README file
@@ -51,13 +55,12 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
-function init() {
+function init(answers) {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating README.md File");
-        writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+        writeToFile("./utils/README.md", generateMarkdown({ ...responses }));
       });
 }
-
 
 // Function call to initialize app
 init();

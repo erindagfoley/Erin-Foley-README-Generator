@@ -31,23 +31,24 @@ function generateMarkdown(data) {
   return `# ${data.title}
 ${renderLicenseBadge(data.license)}
 ## Description
-$ {data.description}
+${data.description}
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributors](#contributors)
-* [Testing](#testing)
-## Features
-${data.features}
-## Languages & Dependencies
-${data.require}
-## How to Use This Application:
+* [Testing](#test)
+* [Questions](#questions)
+## Installation
+${data.installation}
+## Usage
 ${data.usage}
 ## Contributors
 ${data.contributors}
 ## Testing
 ${data.test}
+## Questions
+${data.questions}
 `;
 }
 
