@@ -24,6 +24,7 @@ To set up the README File Generator on your local machine, follow these steps:
 - Run the node index.js command.
 - Follow the prompts to input your project information.
 - After completing the prompts, the generator will create a README.md file in the specified directory.
+  
 ## Collaborators
 This project was created by Erin Foley. Contributions from the open-source community are welcome! Feel free to submit pull requests or report issues.
 ## Questions
